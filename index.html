@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+  </head>
+  <header>
+    <h1>Sudoku</h1>
+    <p id="instruction">Instructions ⬇️:</p>
+    <p id="instructions">
+      1. Select Difficulty, Timer and Theme to customize the Sudoku <br />
+      2. Click on the <strong>"Create New Game!"</strong> Button to start the
+      game <br />
+      3. Good Luck for the game 👍, Let's Go
+    </p>
+
+    <div id="setup-game">
+      <div id="diff">
+        <h3>Choose Difficulty:</h3>
+        <label
+          ><input
+            type="radio"
+            id="diff-1"
+            name="diff"
+            value="easy"
+            checked
+          />Easy</label
+        >
+        <label
+          ><input type="radio" id="diff-2" name="diff" value="medium" />
+          Medium</label
+        >
+        <label
+          ><input type="radio" id="diff-3" name="diff" value="hard" />
+          Hard</label
+        >
+      </div>
+      <div id="time">
+        <h3>Choose Time:</h3>
+        <label
+          ><input type="radio" id="time-1" name="time" value="three" checked />
+          3 Min</label
+        >
+        <label
+          ><input type="radio" id="time-2" name="time" value="five" /> 5
+          Min</label
+        >
+        <label
+          ><input type="radio" id="time-3" name="time" value="ten" /> 10
+          Min</label
+        >
+      </div>
+      <div id="theme">
+        <h3>Choose Theme:</h3>
+        <label
+          ><input
+            type="radio"
+            id="theme-1"
+            name="theme"
+            value="light"
+            checked
+          />
+          Light</label
+        >
+        <label
+          ><input type="radio" id="theme-2" name="theme" value="dark" />
+          Dark</label
+        >
+      </div>
+    </div>
+    <br />
+    <br />
+    <button id="start-btn">Create New Game!</button><br /><br />
+  </header>
+  <body>
+    
+    <div id="stats">
+      <p id="timer">⏲️ Timer : Not Set</p>
+      <p id="lives">💗 Lives : Full</p>
+    </div>
+    <div id="game">
+      <div id="board">
+        <!-- it will contains all the things of the sudoku -->
+      </div>
+      <div id="number-container" class="hidden">
+        <p id="one">1</p>
+        <p id="two">2</p>
+        <p id="three">3</p>
+        <p id="four">4</p>
+        <p id="five">5</p>
+        <p id="six">6</p>
+        <p id="seven">7</p>
+        <p id="eight">8</p>
+        <p id="nine">9</p>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <p>©️ Made with love by Utkarsh ❤️ as a second assignment for Csoc</p>
+  </footer>
+</html>
